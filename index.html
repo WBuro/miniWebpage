@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- HEADER -->
+<div class=" mx-auto container flex ">
+    <!-- Logo -->
+    <a href="index.html" class="text-5xl font-semibold underline  ">Buro<span class="text-red-600 font-semibold">W</span></a>
+    <!-- Dark Theme Button (moved to the right) -->
+    <button id="themeButton" class="text-white ml-auto">
+        <span class="icon light-icon"></span>
+    </button>
+</div>
+
+<!-- Navigation Links -->
+<section>
+    <div class="container mx-auto">
+      <ul class="flex justify-center md:justify-end mt-10"> 
+        <li class="mx-auto"> 
+          <a href="projects.html" class="text-2xl font-semibold hover:text-red-600 hover:border-b-2 hover:border-red-600 ">
+            Projects
+          </a>
+        </li>
+        <li class="mx-auto"> 
+          <a href="https://youtube.com/@Buro-lo3jq?si=Cbrpw0CZvxyLsQC-" class="text-2xl font-semibold  hover:text-red-600 hover:border-b-2 hover:border-red-600" target="_blank ">
+            Videos
+          </a>
+        </li>
+        <li class="mx-auto"> 
+          <a href="blog.html" class="text-2xl font-semibold hover:text-red-600 hover:border-b-2 hover:border-red-600">
+            Blog 
+          </a>
+        </li>
+        <li class="mx-auto"> 
+          <a href="partners.html" class="text-2xl font-semibold hover:text-red-600 hover:border-b-2 hover:border-red-600">
+             Partners
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Main Page -->
+
+<section>
+    <div class="container flex flex-col md:flex-row items-center">
+      <!-- Image Column (Left) -->
+      <div class="w-full md:w-1/2">
+        <img src="/imgs/DrawKit Vector Illustration Project Manager (9).png" alt="" class="w-full h-auto md:w-[750px] md:h-[750px] main-img rounded-full">
+      </div>
+  
+      <!-- Text Column (Right) -->
+      <div class="w-full md:w-1/2 mt-6 md:mt-0">
+        <div class="p-10  ">
+          <p class="text  animation sm:mt-4 md:mt-0 uppercase">Hello I'm <span class="text-red-600">Buro</span></p>
+          <p class="text-xl text-center uppercase font-semibold mt-6 md:mt-6">Welcome To My <span class="text-red-600">Personal Webpage</span> and I want to be a front-end developer<span class="text-red-600" id="firstDate"></span>, so I'm <span class="text-red-600">still improving</span> myself. I will share my journey here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+<footer>
+    <div class="flex justify-center  ">
+      <div class=""> 
+        <a href="https://github.com/WBuro" class="hover:text-red-400  hover:ease-in-out duration-300" target="_blank">
+        <i class="fa-brands fa-github text-2xl"></i>
+        </a>
+    </div>
+      <div class="ml-10">  
+        <a href="#" class="hover:text-red-400  hover:ease-in-out duration-300">
+          <i class="fa-brands fa-x-twitter text-2xl"></i>
+        </a>
+      </div>
+      <div class="ml-10"> 
+        <a href="#" class="hover:text-red-400  hover:ease-in-out duration-300">
+          <i class="fa-brands fa-discord text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/burak-eser-a3bb21213/" class=" ml-10 hover:text-red-400  hover:ease-in-out duration-300" target="_blank">
+          <i class="fa-brands fa-linkedin text-2xl"></i>
+        </a>
+      </div>
+    </div>
+    <span class="block text-sm  sm:text-center mt-4 text-center">© 2023 <a href="index.html" class="hover:underline">BuroW</a>. All Rights Reserved.</span>
+  </footer>
+  </section>
+
+  <!-- What I Learned -->
+ <!--  
+  <div class="text-center mt-14">
+
+    <span class="inline-grid grid-cols-1 sm:hidden md:hidden lg:hidden xl:hidden">
+       
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">HTML&CSS</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">Bootstrap</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">TailWind</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">Javascript</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">Typescript</span>
+    </span>
+  
+    <span class="hidden sm:inline-grid sm:grid-cols-2 md:inline-grid md:grid-cols-3 lg:inline-grid lg:grid-cols-4 xl:inline-grid xl:grid-cols-6 gap-4 ml-36">
+      
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">HTML&CSS</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">Bootstrap</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">TailWind</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">Javascript</span>
+        <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">Typescript</span>
+    </span>
+  
+  </div> -->
+  
+  
+  
+
+
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>

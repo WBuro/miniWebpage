@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+ /* DARK THEMA */
+
+body.light {
+    background-color: #fff;
+    color: #111;
+  }
+
+  body.dark {
+    background-color: #222;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .light-icon::before {
+    content: "\1F31E";
+  }
+
+  .dark-icon::before {
+    content: "\1F319";
+  }
+
+
+/* Animation */
+
+  .text{
+    border-right: 1px solid red;
+    font-size: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animation{
+  animation: typewriter 4s steps(20) 1s infinite both,
+             blinkCursor 600ms steps(20) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 260px;
+  }
+} 
+
+ @keyframes blinkCursor{
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* Hover Effect */
+
+.main-img:hover{
+    margin-left: -5px;
+    transform: translate(-4px,-5px)rotate(3deg);
+    filter: drop-shadow(1px 1px 1px red);
+  }
